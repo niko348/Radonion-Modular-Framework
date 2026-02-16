@@ -7,4 +7,5 @@ Each system (InputManager, CameraManager, etc.) can be dropped into your MonoGam
 
 1. Clone or download this repo.
 2. Add the `Modules/` folder to your MonoGame project.
-3. Reference and initialize systems in your game loop.
+3. Remove any modules you don't need.
+4. Reference and initialize modules in your game loop.
