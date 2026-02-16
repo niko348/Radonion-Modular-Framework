@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
 
-namespace // Directory. Example: namespace Game.Systems
+namespace /* Insert your directory here. */.Modules
 {
     /// <summary>
     /// A static global system to manage Keyboard and Mouse states.
