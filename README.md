@@ -1,7 +1,7 @@
 # Radonion Modular Framework
 
-Radonion Modular Framework is a modular C# framework of plug‑and‑play systems designed to extend MonoGame.  
-Each system (InputManager, CameraManager, etc.) can be dropped into your MonoGame project.
+Radonion Modular Framework is a modular C# library of plug‑and‑play systems designed to extend MonoGame.  
+Each module (InputManager, CameraManager, etc.) can be dropped into your MonoGame project.
 
 ## Usage
 
