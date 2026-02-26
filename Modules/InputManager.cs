@@ -1,7 +1,7 @@
-﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
 
-namespace /* Insert your directory here. Example: Game.Modules */
+namespace Dirge.Systems
 {
     /// <summary>
     /// A static global system to manage Keyboard and Mouse states.
@@ -47,7 +47,7 @@ namespace /* Insert your directory here. Example: Game.Modules */
 
         /// <summary> Returns true as long as the Left Mouse Button is held down. </summary>
         public static bool IsLeftMouseHeld()
-            => _currentMouseState.LeftButton == ButtonState.Pressed
+            => _currentMouseState.LeftButton == ButtonState.Pressed;
 
 
         /// <summary> Returns true only on the frame the Left Mouse Button is released. </summary>
@@ -61,7 +61,7 @@ namespace /* Insert your directory here. Example: Game.Modules */
 
         /// <summary> Returns true as long as the Left Mouse Button is held down. </summary>
         public static bool IsRightMouseHeld()
-            => _currentMouseState.RightButton == ButtonState.Pressed
+            => _currentMouseState.RightButton == ButtonState.Pressed;
 
 
         /// <summary> Returns true only on the frame the Left Mouse Button is released. </summary>
@@ -129,9 +129,9 @@ namespace /* Insert your directory here. Example: Game.Modules */
         /// Returns a Vector2 for Side-Scrollers. 
         /// X is movement, Y is for looking up/down or ladders.
         /// </summary>
-        public static float GetSideScrollingMovement()
+        public static Vector2 GetSideScrollingMovement()
         {
-            float direction = Vector2.Zero;
+            Vector2 direction = Vector2.Zero;
 
             if (IsKeyHeld(Keys.A)) direction.X -= 1;
             if (IsKeyHeld(Keys.D)) direction.X += 1;
