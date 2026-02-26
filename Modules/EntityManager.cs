@@ -1,4 +1,4 @@
-using Microsot.Xna.Framework
+using Microsoft.Xna.Framework;
 
 namespace /* Insert your directory here. Example: Game.Modules */
 {
@@ -32,3 +32,4 @@ namespace /* Insert your directory here. Example: Game.Modules */
         }
     }
 }
+
