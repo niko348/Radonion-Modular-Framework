@@ -43,7 +43,7 @@ namespace Dirge.Systems
 
         /// <summary> Returns true only on the frame the Left Mouse Button is pressed. </summary>
         public static bool IsLeftMousePressed()
-            => _currentMouseState.LeftButton == ButtonState.Pressed && _prevMouseState.RightButton == ButtonState.Released;
+            => _currentMouseState.LeftButton == ButtonState.Pressed && _prevMouseState.LeftButton == ButtonState.Released;
 
         /// <summary> Returns true as long as the Left Mouse Button is held down. </summary>
         public static bool IsLeftMouseHeld()
@@ -52,7 +52,7 @@ namespace Dirge.Systems
 
         /// <summary> Returns true only on the frame the Left Mouse Button is released. </summary>
         public static bool IsLeftMouseReleased()
-            => _currentMouseState.LeftButton == ButtonState.Released && _prevMouseState.RightButton == ButtonState.Pressed;
+            => _currentMouseState.LeftButton == ButtonState.Released && _prevMouseState.LeftButton == ButtonState.Pressed;
 
 
         /// <summary> Returns true only on the frame the Left Mouse Button is pressed. </summary>
